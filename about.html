@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Marseille Simulation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* About page specific styles */
+        .about-hero {
+            background: linear-gradient(180deg, #274059 0%, #1f2f3a 100%);
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .about-hero h1 {
+            font-size: 2.4rem;
+            margin-bottom: 15px;
+        }
+
+        .about-hero p {
+            opacity: 0.92;
+            max-width: 760px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        .about-content {
+            padding: 60px 0;
+        }
+
+        .about-section {
+            max-width: 900px;
+            margin: 0 auto 50px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(31, 47, 58, 0.08);
+        }
+
+        .about-section h2 {
+            color: #1f6fb1;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .about-section h2 i {
+            color: #5b7fa3;
+            font-size: 1.5rem;
+        }
+
+        .about-section p {
+            color: #445;
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .about-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .about-section li {
+            padding: 12px 0 12px 30px;
+            position: relative;
+            color: #445;
+            line-height: 1.7;
+        }
+
+        .about-section li:before {
+            content: "\f054";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #1f6fb1;
+            font-size: 0.8em;
+        }
+
+        .highlight-section {
+            background: linear-gradient(135deg, #f0f4f8 0%, #f9fbfd 100%);
+            border-left: 4px solid #1f6fb1;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+
+        .highlight-section strong {
+            color: #1f6fb1;
+            font-weight: 700;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .value-card {
+            background: linear-gradient(135deg, #fbfcfd 0%, #f7fafc 100%);
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #5b7fa3;
+            text-align: center;
+        }
+
+        .value-card i {
+            font-size: 2.5rem;
+            color: #1f6fb1;
+            margin-bottom: 15px;
+        }
+
+        .value-card h3 {
+            color: #1f6fb1;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .value-card p {
+            color: #666;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        @media (max-width: 700px) {
+            .about-hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .about-section {
+                padding: 25px;
+                margin: 0 auto 30px;
+            }
+
+            .about-section h2 {
+                font-size: 1.4rem;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logomsbleu.png" alt="Logo Marseille Simulation">
+                <div class="brand">
+                    <h2>Marseille Simulation - Offre techniques et administratives</h2>
+                    <span class="subtitle">Plateforme SOTA</span>
+                </div>
+            </div>
+            <ul>
+                <li><a href="index.html#missions">Missions</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <div class="about-hero">
+        <h1>À propos de Marseille Simulation</h1>
+        <p>Découvrez notre plateforme de missions bénévoles dédiée à l'amélioration continue et à l'avancement de nos projets</p>
+    </div>
+
+    <!-- About Content -->
+    <div class="container about-content">
+        <!-- What is SOTA? -->
+        <div class="about-section">
+            <h2>
+                <i class="fas fa-info-circle"></i>
+                Qu'est-ce que SOTA ?
+            </h2>
+            <p>
+                <strong>SOTA</strong> est la plateforme de recrutement de Marseille Simulation dédiée aux missions techniques et administratives. Elle centralise toutes les opportunités de missions bénévoles et collaboratives proposées par Marseille Simulation.
+            </p>
+            <p>
+                SOTA est conçue pour permettre à notre équipe et nos contributeurs de travailler ensemble sur des missions variées, tout en développant leurs compétences et en apportant une valeur réelle aux projets collectifs. Notre objectif est de créer un écosystème dynamique où chacun peut contribuer au succès de projets passionnants.
+            </p>
+        </div>
+
+        <!-- Missions bénévoles -->
+        <div class="about-section">
+            <h2>
+                <i class="fas fa-heart"></i>
+                Les missions bénévoles
+            </h2>
+            <p>
+                Toutes les missions proposées sur notre plateforme sont <strong>entièrement bénévoles et non rémunérées</strong>. Elles représentent des opportunités pour les contributeurs de :
+            </p>
+            <ul>
+                <li>Développer de nouvelles compétences et expertise</li>
+                <li>Contribuer directement à l'amélioration continue de la plateforme Marseille Simulation</li>
+                <li>Participer à l'avancement de projets variés et impactants</li>
+                <li>Travailler dans un environnement collaboratif et stimulant</li>
+                <li>Faire partie d'une communauté motivée et engagée</li>
+            </ul>
+
+            <div class="highlight-section">
+                <p>
+                    <i class="fas fa-star"></i>
+                    <strong>Cas exceptionnels :</strong> Dans certains cas exceptionnels, la plateforme peut accorder une aide financière ponctuelle pour assurer le bon déroulement d'une opération ou d'un projet stratégique.
+                </p>
+            </div>
+        </div>
+
+        <!-- Notre engagement -->
+        <div class="about-section">
+            <h2>
+                <i class="fas fa-rocket"></i>
+                Notre engagement
+            </h2>
+            <p>
+                Nous nous engageons à :
+            </p>
+            <ul>
+                <li>Offrir des missions diversifiées et stimulantes adaptées à différents niveaux d'expérience</li>
+                <li>Créer un environnement inclusif où chacun peut apporter sa contribution</li>
+                <li>Fournir un support et des ressources pour aider nos contributeurs à réussir</li>
+                <li>Valoriser et reconnaître les efforts et contributions de chacun</li>
+                <li>Favoriser l'apprentissage et le développement professionnel continu</li>
+            </ul>
+
+            <div class="highlight-section">
+                <p>
+                    Chaque mission réalisée contribue directement à l'amélioration et l'évolution de nos projets, renforçant ainsi notre plateforme et notre impact collectif.
+                </p>
+            </div>
+        </div>
+
+        <!-- Nos valeurs -->
+        <div class="about-section">
+            <h2>
+                <i class="fas fa-gem"></i>
+                Nos valeurs
+            </h2>
+            <p>Ces valeurs fondamentales guident nos actions et nos décisions :</p>
+            <div class="values-grid">
+                <div class="value-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Collaboration</h3>
+                    <p>Travailler ensemble pour atteindre des objectifs communs</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-bulb"></i>
+                    <h3>Innovation</h3>
+                    <p>Chercher constamment de meilleures solutions et approches</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Croissance</h3>
+                    <p>Favoriser le développement et l'amélioration continue</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Inclusivité</h3>
+                    <p>Accueillir tous les niveaux et perspectives</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Excellence</h3>
+                    <p>Viser la qualité dans chaque mission entreprise</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-compass"></i>
+                    <h3>Transparence</h3>
+                    <p>Communiquer clairement et ouvertement</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Qui peut participer? -->
+        <div class="about-section">
+            <h2>
+                <i class="fas fa-question-circle"></i>
+                Qui peut participer ?
+            </h2>
+            <p>
+                Notre plateforme est ouverte à tous ! Que vous soyez :
+            </p>
+            <ul>
+                <li>Un professionnel expérimenté cherchant à contribuer à des projets intéressants</li>
+                <li>Un débutant motivé par l'apprentissage et le développement</li>
+                <li>Une personne ayant des compétences spécifiques à partager</li>
+                <li>Quelqu'un cherchant à se challenger et à découvrir nouvelles opportunités</li>
+            </ul>
+            <p>
+                Il n'existe pas de barrière à l'entrée. Nous accueillons les contributeurs de tous les niveaux d'expérience, du moment qu'ils sont motivés et prêts à s'investir dans nos missions.
+            </p>
+        </div>
+
+        <!-- CTA -->
+        <div class="about-section" style="text-align: center; background: linear-gradient(135deg, #f0f4f8 0%, #e8f0f5 100%); border-left: 4px solid #1f6fb1;">
+            <h2 style="justify-content: center;">
+                <i class="fas fa-arrow-right"></i>
+                Prêt à nous rejoindre ?
+            </h2>
+            <p>Consultez nos missions disponibles et trouvez celle qui vous correspond.</p>
+            <div style="margin-top: 25px;">
+                <a href="index.html#missions" class="btn-primary" style="display: inline-block; padding: 12px 28px; border-radius: 8px; background: #1f6fb1; color: white; text-decoration: none; font-weight: 700; transition: background 0.3s;">
+                    <i class="fas fa-rocket"></i> Voir les missions
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section footer-branding">
+                <img src="images/logomsblanc.png" alt="Logo MS" class="footer-logo">
+                <div>
+                    <h3>Marseille Simulation</h3>
+                    <p>Plateforme de missions administratives et techniques</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html#missions">Missions</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Nous contacter</h4>
+                <p><strong>Discord :</strong> @alexismcn</p>
+                <p class="text-small">Alexis Mancini — Directeur général / DRH</p>
+            </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+            <p>© 2025 Marseille Simulation — Équipe SOTA</p>
+        </div>
+    </footer>
+</body>
+</html>
