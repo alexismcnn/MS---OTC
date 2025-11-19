@@ -55,6 +55,19 @@
             font-weight: 700;
         }
 
+        nav .logo .brand {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.05;
+        }
+
+        nav .logo .subtitle {
+            font-size: 0.85rem;
+            color: #6b6b6b;
+            font-weight: 500;
+            margin-top: 2px;
+        }
+
         nav ul {
             list-style: none;
             display: flex;
@@ -97,6 +110,22 @@
             opacity: 0.95;
             max-width: 700px;
         }
+
+        /* Notice (bénévolat) */
+        .notice {
+            background: #fff6e6;
+            color: #5b4636;
+            border-left: 4px solid #f0b429;
+            padding: 14px 20px;
+            margin: 20px 0;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .notice i { color: #f0b429; font-size: 1.2em; }
 
         .cta-buttons {
             display: flex;
@@ -312,7 +341,10 @@
         <div class="container">
             <div class="logo">
                 <img src="images/logomsbleu.png" alt="Logo Marseille Simulation">
-                <h2>Marseille Simulation - Offre techniques et administratives</h2>
+                <div class="brand">
+                    <h2>Marseille Simulation - Offre techniques et administratives</h2>
+                    <span class="subtitle">Plateforme SOTA</span>
+                </div>
             </div>
             <ul>
                 <li><a href="#missions">Missions</a></li>
@@ -329,6 +361,16 @@
         <div class="cta-buttons">
             <a href="#missions" class="btn-primary"><i class="fas fa-search"></i> Voir les missions</a>
             <a href="#contact" class="btn-secondary"><i class="fas fa-envelope"></i> Nous contacter</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="notice" role="note" aria-label="Information missions bénévoles">
+            <i class="fas fa-info-circle"></i>
+            <div>
+                <strong>Toutes les missions proposées sont bénévoles et non rémunérées.</strong>
+                Dans certains cas exceptionnels, le serveur peut accorder une aide financière ponctuelle pour assurer le bon déroulement d'une opération.
+            </div>
         </div>
     </div>
 
@@ -372,6 +414,22 @@
                 <p>Créer une interface permettant d'afficher, consulter et gérer en temps réel les formulaires de candidature enregistrés dans une Google Sheet, dans le cadre de la refonte du pôle RH.</p>
                 <p><strong>Compétences recherchées :</strong> Outils no-code / low-code ou développement web classique, intégration Google Sheet / API Google</p>
                 <a href="offre-detail.html" class="view-more"><i class="fas fa-arrow-right"></i> Voir plus de détails</a>
+            </div>
+            
+            <div class="offer-card">
+                <div class="offer-header">
+                    <div>
+                        <h3><i class="fas fa-users"></i> Recrutement : Membres motivés pour réorganisation administrative</h3>
+                        <p class="offer-date">Publié le 19 novembre 2025</p>
+                    </div>
+                    <span class="badge-mission">Mission Temporaire</span>
+                </div>
+                <p>Nous recherchons plusieurs membres motivés afin de retravailler ensemble le fonctionnement administratif et l'organisation du serveur.</p>
+                <p><strong>Atouts :</strong> Une expérience professionnelle passée dans l'associatif ou en entreprise est un plus. Il faudra procéder à la réécriture des règlements ; une expérience en RH ou en droit est également un atout.</p>
+                <p><strong>Localisation :</strong> Entièrement à distance.</p>
+                <p><strong>Mission :</strong> Il s'agit d'une mission temporaire avec possibilité d'intégration ultérieure dans un poste de cadre, selon le déroulement de la mission et la motivation de chacun.</p>
+                <p><strong>Remarque :</strong> Postulez via Discord en envoyant un message privé à <strong>@alexismcn</strong>.</p>
+                <a href="offre-admin.html" class="view-more"><i class="fas fa-arrow-right"></i> Voir plus de détails</a>
             </div>
         </div>
     </section>
